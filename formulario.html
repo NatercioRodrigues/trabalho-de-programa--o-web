@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fomulario.css">
     <title>formulario</title>
 </head>
 <body>
-    <div>
-        <h1>Vamos começar a sua incriçao para E.E.E.P Vereador José Batista Filho </h1>
-        <p>Digite a informaçãoa seguir </p>
+    
+    <div class="campo">
+        <h1 id="titulo">Vamos começar a sua incriçao para E.E.E.P Vereador José Batista Filho </h1>
+        <p id="paragrafo">Digite a informaçãoa seguir </p>
         <br>
     </div>
     <form>
-        <fieldset>
-            <div>
-                <label> Nome completo</label>
-                <input type="text" name="nome completo" id="nome ">
+        <fieldset class="titulo">
+            <div id="texto">
+                <labe for="Nome completo"><strong>Nome completo</strong> </label>
+                <input type="text" name="nome completo" id="nome " required>
+            </div>
+
+            <div class="campo">
+                <label for="email" > <strong>Email</strong> </label>
+                <input type="email" name="email" id="email " required>
             </div>
 
             <div>
-                <label> Email</label>
-                <input type="email" name="email" id="email ">
-            </div>
-
-            <div>
-                <label>Sua cidade</label>
+                <label for="sua cidade"><strong>Sua cidade</strong></label>
                 <label>
                     <input type="radio" name="cidade" value="altosanto" > Alto Santo
                 </label>
@@ -33,16 +35,16 @@
                 </label>
             </div>
 
-            <div>
-            <label>Sua escola antiga era</label>
+            <div class="campo">
+            <label for="Sua escola antiga era"><strong>Sua escola antiga era</strong></label>
                 <label>
                     <input type="radio" name="escola" value="Privada" > Privada
                 </label>
                 <label>
                     <input type="radio" name="escola" value="publica" > publica
                 </label>
-            <div>  
-                <label>Primeira opção de curso</label>
+            <div class="campo">  
+                <label for="Primeira opção de curso"><strong>Primeira opção de curso</strong></label>
                 <label>
                     <input type="radio" name="curso" value="Informática" > Informática
                 </label>
@@ -52,11 +54,13 @@
                 <label>
                     <input type="radio" name="curso" value="Massoterapia" > Massoterapia
                 </label>
+                <label>
                 <input type="radio" name="curso" value="Comércio" > Comércio
+            </label>
             </div>
 
             <div>
-            <label> Segunda opção de curso</label>
+            <label for="Segunda opção de curso"> <strong>Segunda opção de curso</strong></label>
             <label>
                 <input type="radio" name="Segunda" value="Informática" > Informática
             </label>
@@ -66,11 +70,13 @@
             <label>
                 <input type="radio" name="Segunda" value="Massoterapia" > Massoterapia
             </label>
+            <label>
             <input type="radio" name="Segunda" value="Comércio" > Comércio
+        </label>
         </div>
         
-        <div>
-            <label> Teceira opção de curso</label>
+        <div class="campo">
+            <label  for="Teceira opção de curso" > <strong> Teceira opção de curso</strong></label>
             <label>
                 <input type="radio" name="Teceira" value="Informática" > Informática
             </label>
@@ -80,9 +86,14 @@
             <label>
                 <input type="radio" name="Teceira" value="Massoterapia" > Massoterapia
             </label>
-            <input type="radio" name="Teceira" value="Comércio" > Comércio
+            <label>
+          <input type="radio" name="Teceira" value="Comércio" > Comércio 
+        </label>
         </div>
+    
+        <button class="botao" type="submit" > Enviar</button>
         </fieldset>
     </form>
+    
 </body>
 </html>
